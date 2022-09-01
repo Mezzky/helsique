@@ -4,12 +4,13 @@
 /*========= CSS VARIABLE =========*/
 :root{
     --main-font: 'Poppins';
-    --bg-color: #FFF;
-    --dark-color: #00095B;
-    --main-color: #000F92;
-    --second-color: #404BA9;
-    --text-color: #000;
-    --text-light: #7A7A7A; 
+    --main-color: #1A1823;
+    --second-color: #FFE587;
+    --bg-color: #FFFEEB;
+    --accent-color: #E25757;
+    --box-btn-color: #2A292B;
+    --tittle-text: #2A292B;
+    --text-dimmed: #616161;
 }
 
 
@@ -28,6 +29,7 @@ html{
 body{
     background-color: var(--bg-color);
     overflow-x: hidden;
+    /* height: 10000px; */
 }
 
 a{
@@ -46,8 +48,203 @@ input:focus{
     outline: none;
 }
 
-/*========= MAIN STYLE =========*/
+.active-bg{
+    background-color: var(--second-color);
+}
 
-/*========= RESPONSIVE =========*/
+/*================== MAIN STYLE ==================*/
+/* MENU TOGGLE */
+.menu-toggle{
+    display: none;
+}
 
-/*========= ANIMATION =========*/
+/* HEADER */
+header{
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+header .logo a{
+    color: var(--tittle-text);
+}
+
+header nav{
+    display: flex;
+    gap: 10px;
+}
+
+header nav li a{
+    position: relative;
+    color: #000;
+    font-weight: 500;
+}
+
+header nav li a::after, 
+.btn a:last-child::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: 200ms linear;
+}
+
+header nav li a:hover::after,
+.btn a:last-child:hover::after{
+    width: 100%;
+}
+
+
+header .btn{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .btn a:first-child{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+header .btn a:first-child:hover{
+    background-color: #f5d561;
+}
+
+header .btn a:last-child{
+    position: relative;
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+header.scrolled{
+    margin-top: 30px;
+    width: 95%;
+    border-radius: 20px;
+    border: 2px solid var(--main-color);
+    background-color: rgba(255, 241, 190, 100%);
+    transition: 300ms ease-in-out;
+}
+
+/* HOME PAGE */
+.home-page{
+    width: 100%;
+    padding: 100px 50px 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 0.8fr;
+    gap: 50px;
+}
+
+.home-page .content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.home-page .content .simple-text{
+    color: var(--text-dimmed);
+    font-size: 18px;
+}
+
+.home-page .content h2{
+    color: var(--tittle-text);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.home-page .content p{
+    color: var(--text-dimmed);
+    font-size: 20px;
+}
+
+.home-page .content a{
+    background-color: var(--box-btn-color);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: max-content;
+}
+.home-page .content a:hover{
+    background-color: #444047;
+}
+
+.home-page .motivation{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.home-page .motivation img{
+    width: 70px;
+    height: 70px;
+    background-color: var(--box-btn-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.home-page .motivation .motivation-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page .motivation .motivation-content h2{
+    color: var(--tittle-text);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.home-page .motivation .motivation-content p{
+    color: var(--text-dimmed);
+    font-size: 20px;
+}
+
+.home-page .motivation a{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+.home-page .motivation a i{
+    transition: 100ms linear;
+}
+.home-page .motivation a:hover i{
+    margin-left: 10px;
+}
+
+.home-page .status{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.home-page .status .status-box:first-child{
+    border-left: 1px solid var(--text-dimmed);
+}
+
+.home-page .status .status-box{
+    border-right: 1px solid var(--text-dimmed);
+    padding: 0 20px;
+}
+
+.home-page .status .status-box h3{
+    color: var(--tittle-text);
+    font-size: 20px;
+}
+
+.home-page .status .status-box p{
+    font-size: 15px;
+}
+
+/*================== RESPONSIVE ==================*/
+
+/*================== ANIMATION ==================*/
