@@ -29,7 +29,7 @@ html{
 body{
     background-color: var(--bg-color);
     overflow-x: hidden;
-    /* height: 10000px; */
+    height: 10000px;
 }
 
 a{
