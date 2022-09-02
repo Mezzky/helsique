@@ -118,7 +118,7 @@ header .btn{
 }
 
 header .btn a:first-child{
-    background-color: var(--main-color);
+    background-color: var(--box-btn-color);
     color: #fff;
     padding: 7px 20px;
     border-radius: 5px;
@@ -126,7 +126,7 @@ header .btn a:first-child{
 }
 
 header .btn a:first-child:hover{
-    background-color: var(--box-btn-color);
+    background-color: #444047;
 }
 
 header .btn a:last-child{
@@ -256,48 +256,68 @@ header.scrolled{
 .why-page{
     background-color: var(--main-color);
     margin: auto;
-    padding: 200px 50px 150px;
-    gap: 100px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 500px);
-    justify-content: space-evenly;
-}
-
-.why-page .left-box, .right-box{
+    padding: 150px 50px 150px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
+}
+
+.why-page .tittle-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 200px;
+}
+
+.why-page .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    gap: 200px;
+}
+
+.why-page .content .left-box, .right-box{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
 
-.why-page .left-box .tittle h2{
-    color: #fff;
-    font-size: 30px;
+.why-page .tittle-box .tittle{
+    width: 400px;
 }
 
-.why-page .right-box .tittle p{
+.why-page .tittle-box .tittle h2{
     color: #fff;
-    font-size: 20px;
+    font-size: 28px;
 }
 
-.why-page .left-box .box, .right-box .box{
+.why-page .tittle-box .tittle:last-child{
+    align-self: flex-end;
+}
+
+.why-page .tittle-box .tittle p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.why-page .content .left-box .box, .right-box .box{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.why-page .left-box .box h2, .right-box .box h2{
+.why-page .content .left-box .box h2, .right-box .box h2{
     color: var(--second-color);
 }
 
-.why-page .left-box .box h3, .right-box .box h3{
+.why-page .content .left-box .box h3, .right-box .box h3{
     color: #fff;
     font-size: 22px;
 }
 
-.why-page .left-box .box p, .right-box .box p{
+.why-page .content .left-box .box p, .right-box .box p{
     color: var(--text-dimmed);
     font-weight: 500;
 }
