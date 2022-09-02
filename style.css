@@ -52,6 +52,11 @@ input:focus{
     background-color: var(--second-color);
 }
 
+.active-text{
+    color: var(--second-color);
+    font-weight: bold;
+}
+
 /*================== MAIN STYLE ==================*/
 /* MENU TOGGLE */
 .menu-toggle{
@@ -69,6 +74,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
+    transition: 300ms ease-in-out;
 }
 
 header .logo a{
@@ -77,13 +83,14 @@ header .logo a{
 
 header nav{
     display: flex;
-    gap: 10px;
+    gap: 25px;
 }
 
 header nav li a{
     position: relative;
     color: #000;
     font-weight: 500;
+    font-size: 20px;
 }
 
 header nav li a::after, 
@@ -119,7 +126,7 @@ header .btn a:first-child{
 }
 
 header .btn a:first-child:hover{
-    background-color: #f5d561;
+    background-color: var(--box-btn-color);
 }
 
 header .btn a:last-child{
@@ -134,13 +141,13 @@ header.scrolled{
     border-radius: 20px;
     border: 2px solid var(--main-color);
     background-color: rgba(255, 241, 190, 100%);
-    transition: 300ms ease-in-out;
 }
 
 /* HOME PAGE */
 .home-page{
+    margin: auto;
     width: 100%;
-    padding: 100px 50px 0;
+    padding: 120px 50px;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 0.8fr;
@@ -244,6 +251,58 @@ header.scrolled{
 .home-page .status .status-box p{
     font-size: 15px;
 }
+
+/* WHY PAGE */
+.why-page{
+    background-color: var(--main-color);
+    margin: auto;
+    padding: 200px 50px 150px;
+    gap: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: space-evenly;
+}
+
+.why-page .left-box, .right-box{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-page .left-box .tittle h2{
+    color: #fff;
+    font-size: 30px;
+}
+
+.why-page .right-box .tittle p{
+    color: #fff;
+    font-size: 20px;
+}
+
+.why-page .left-box .box, .right-box .box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.why-page .left-box .box h2, .right-box .box h2{
+    color: var(--second-color);
+}
+
+.why-page .left-box .box h3, .right-box .box h3{
+    color: #fff;
+    font-size: 22px;
+}
+
+.why-page .left-box .box p, .right-box .box p{
+    color: var(--text-dimmed);
+    font-weight: 500;
+}
+
+
 
 /*================== RESPONSIVE ==================*/
 
