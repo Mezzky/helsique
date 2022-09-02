@@ -29,7 +29,7 @@ html{
 body{
     background-color: var(--bg-color);
     overflow-x: hidden;
-    height: 10000px;
+    /* height: 10000px; */
 }
 
 a{
@@ -257,7 +257,7 @@ header.scrolled{
 .why-page{
     background-color: var(--main-color);
     margin: auto;
-    padding: 150px 50px 150px;
+    padding: 150px 50px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -323,7 +323,53 @@ header.scrolled{
     font-weight: 500;
 }
 
+/* START PAGE */
+.start-page{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 150px 50px 100px;
+}
 
+.start-page .start-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.start-page .start-content h2{
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.start-page .start-content p{
+    color: var(--text-dimmed);
+    font-size: 16px;
+    width: 80%;
+}
+
+.start-page a{
+    color: var(--main-color);
+    text-decoration: underline;
+    font-size: 18px;
+}
+.start-page a i{
+    transition: 100ms linear;
+}
+.start-page a:hover i{
+    margin-left: 10px;
+}
+
+.start-page .start-img{
+    display: flex;
+}
+
+.start-page .start-img img{
+    width: 650px;
+    height: 450px;
+}
 
 /*================== RESPONSIVE ==================*/
 
