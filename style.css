@@ -90,7 +90,7 @@ header nav li a{
     position: relative;
     color: #000;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 header nav li a::after, 
