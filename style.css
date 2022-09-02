@@ -50,6 +50,7 @@ input:focus{
 
 .active-bg{
     background-color: var(--second-color);
+    padding: 0 5px;
 }
 
 .active-text{
