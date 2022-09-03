@@ -74,7 +74,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 10px 50px;
     transition: 300ms ease-in-out;
 }
 
@@ -91,7 +91,7 @@ header nav li a{
     position: relative;
     color: #000;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 header nav li a::after, 
