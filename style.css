@@ -126,19 +126,26 @@ header .logo a{
     color: var(--tittle-text);
 }
 
-header nav{
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+header .navbar nav{
     display: flex;
     gap: 25px;
 }
 
-header nav li a{
+header .navbar nav li a{
     position: relative;
     color: #000;
     font-weight: 500;
     font-size: 16px;
 }
 
-header nav li a::after, 
+header .navbar nav li a::after, 
 .btn a:last-child::after{
     content: '';
     position: absolute;
@@ -150,19 +157,19 @@ header nav li a::after,
     transition: 200ms linear;
 }
 
-header nav li a:hover::after,
+header .navbar nav li a:hover::after,
 .btn a:last-child:hover::after{
     width: 100%;
 }
 
 
-header .btn{
+header .navbar .btn{
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-header .btn a:first-child{
+header .navbar .btn a:first-child{
     background-color: var(--box-btn-color);
     color: #fff;
     padding: 7px 20px;
@@ -170,11 +177,11 @@ header .btn a:first-child{
     font-weight: 500;
 }
 
-header .btn a:first-child:hover{
+header .navbar .btn a:first-child:hover{
     background-color: #444047;
 }
 
-header .btn a:last-child{
+header .navbar .btn a:last-child{
     position: relative;
     color: var(--main-color);
     font-weight: 500;
@@ -418,7 +425,43 @@ header.scrolled{
 /*================== RESPONSIVE ==================*/
 /* ***** TABLET ***** */
 @media screen and (max-width: 820px) {
-    
+    /* MENU TOGGLE */
+    .menu-toggle{
+        display: flex;
+    }
+
+    /* HEADER */
+    header .navbar{
+        visibility: hidden;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        border-radius: 20px;
+        gap: 20px;
+        background-color: #f5d45c;
+        transform: translateY(-500px) scale(0);
+    }
+    header .navbar.slide{
+        visibility: visible;
+        transform: translateY(0) scale(1);
+        top: 80px;
+        transition: 500ms ease-in-out;
+    }
+
+    header .navbar nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .navbar nav li a{
+        font-size: 20px;
+    }
 }
 /* ***** MOBILE ***** */
 @media screen and (max-width: 480px) {
