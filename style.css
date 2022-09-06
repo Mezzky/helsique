@@ -431,7 +431,9 @@ header.scrolled{
         opacity: 0;
         z-index: 100;
         position: absolute;
-        right: 0;
+        right: 50px;
+        top: 80px;
+        border-radius: 0px;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
@@ -443,6 +445,11 @@ header.scrolled{
     }
     header .navbar.slide{
         opacity: 1;
+    }
+    header .navbar.scrolled{
+        right: 0;
+        top: 100px;
+        border-radius: 20px;
     }
 
     header .navbar nav{

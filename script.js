@@ -7,14 +7,10 @@ const navbar = document.querySelector('header .navbar');
 window.addEventListener('scroll', () =>{
     if(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10){
         header.classList.add('scrolled');
-        navbar.style.borderRadius = "20px";
-        navbar.style.right = "0";
-        navbar.style.top = "100px";
+        navbar.classList.add('scrolled');
     } else {
         header.classList.remove('scrolled');
-        navbar.style.borderRadius = "0px";
-        navbar.style.right = "50px";
-        navbar.style.top = "80px";
+        navbar.classList.remove('scrolled');
     }
 });
 
