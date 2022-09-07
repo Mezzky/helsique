@@ -203,7 +203,7 @@ header.scrolled{
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
+    gap: 20px;
 }
 
 .home-page .content{
@@ -455,6 +455,7 @@ header.scrolled{
     /* HEADER */
     header .navbar{
         padding: 80px 50px;
+        visibility: hidden;
         opacity: 0;
         z-index: 100;
         position: absolute;
@@ -473,6 +474,7 @@ header.scrolled{
     }
     header .navbar.slide{
         opacity: 1;
+        visibility: visible;
     }
     header .navbar.scrolled{
         right: 0;
@@ -600,11 +602,11 @@ header.scrolled{
 
 @keyframes spin {
     0%{
-        transform: rotate(0deg);
+        transform: rotateY(0deg);
     }
     
     100%{
-        transform: rotate(360deg);
+        transform: rotateY(360deg);
     }
 }
 
