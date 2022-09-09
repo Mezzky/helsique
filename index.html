@@ -24,8 +24,8 @@
                 <li><a href="#">Kontak</a></li>
             </nav>
             <div class="btn">
-                <a href="#">Masuk</a>
-                <a href="#">Daftar</a>
+                <a id="login" href="#">Masuk</a>
+                <a id="register" href="#">Daftar</a>
             </div>
         </div>
         <div class="menu-toggle">
@@ -35,6 +35,57 @@
             <span></span>
         </div>
     </header>
+
+    <!-- POPUP BOX -->
+    <section class="overlay">
+        <div class="popup">
+            <h2>Halo Kawan 👊, <span class="active-bg">Selamat Datang!</span></h2>
+            <h3>Masukan Akun</h3>
+            <p>Masukan akunmu untuk mengakses lebih banyak fitur dari platform kami </p>
+            <form action="">
+                <div class="input-box">
+                    <label for="usernameEmail">Email/Username</label>
+                    <input type="text" autocomplete="off" name="usernameEmail">
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" autocomplete="off" name="password">
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="remember">
+                    <label for="remember">Ingat Saya</label>
+                </div>
+                <button type="submit">Masuk</button>
+            </form>
+            <p>Belum punya akun? <a id="register" href="">Daftar Disini</a></p>
+        </div>
+
+        <!-- <div class="popup">
+            <h2>Halo Kawan 👊, <span class="active-bg">Selamat Datang!</span></h2>
+            <h3>Daftar Akun</h3>
+            <p>Daftar untuk mendapatkan info seputar olahraga dan kesehatan fisik tiap harinya dari kami</p>
+            <form action="">
+                <div class="input-box">
+                    <label for="usernameEmail">Email/Username</label>
+                    <input type="text" autocomplete="off" name="usernameEmail">
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" autocomplete="off" name="password">
+                </div>
+                <div class="input-box">
+                    <label for="confirmPass">Confirm Password</label>
+                    <input type="password" autocomplete="off" name="confirmPass">
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="remember">
+                    <label for="remember">Beritahu saya jika ada informasi terbaru</label>
+                </div>
+                <button type="submit">Masuk</button>
+            </form>
+            <p>Belum punya akun? <a id="login" href="">Masuk Disini</a></p>
+        </div> -->
+    </section>
 
     <!-- HOME PAGE -->
     <section id="home" class="home-page">
