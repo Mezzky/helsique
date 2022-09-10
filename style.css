@@ -197,10 +197,10 @@ header.scrolled{
 
 /* POPUP BOX */
 .overlay{
-    visibility: hidden;
+    visibility: visible;
     z-index: 500;
     position: absolute;
-    background: var(--main-color);
+    background: rgba(26, 24, 35, 90%);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -215,6 +215,7 @@ header.scrolled{
     background-color: #FFFEEB;
     display: flex;
     flex-direction: column;
+    backdrop-filter: blur(10px);
     gap: 20px;
 }
 
@@ -239,6 +240,7 @@ header.scrolled{
 }
 
 .overlay .popup form .input-box input{
+    background: transparent;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid var(--box-btn-color);
@@ -261,6 +263,11 @@ header.scrolled{
 .overlay .popup p a{
     color: var(--main-color);
     text-decoration: underline;
+}
+
+.overlay #registerBox{
+    visibility: hidden;
+    position: absolute;
 }
 
 /* HOME PAGE */
