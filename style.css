@@ -584,6 +584,187 @@ body.loginPop, body.regisPop{
     width: 650px;
     height: 450px;
 }
+
+/* CONSIST PAGE */
+.consist-page{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    position: relative;
+    background-color: var(--main-color);
+    padding: 150px 80px;
+    overflow: hidden;
+}
+
+.consist-page .shape{
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    filter: blur(50px);
+}
+.consist-page .shape.one{
+    background-color: rgba(116, 250, 177, 30%);
+    top: 200px;
+    left: -200px;
+}
+.consist-page .shape.two{
+    background-color: rgba(226, 87, 87, 30%);
+    top: 1200px;
+    left: 1000px;
+}
+.consist-page .shape.three{
+    background-color: rgba(138, 128, 250, 30%);
+    top: 1900px;
+    left: -200px;
+}
+
+.consist-page .consist-card, .consist-slider{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.consist-page .consist-card h2{
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+
+.consist-page .consist-card .card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.consist-page .consist-card .card-container .card{
+    z-index: 10;
+    background-color: var(--box-btn-color);
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 30px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--text-dimmed);
+}
+
+.consist-page .consist-card .card-container .card .img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consist-page .consist-card .card-container .card .img-box img{
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+}
+
+.consist-page .consist-card .card-container .card h3,a{
+    color: #fff;
+}
+
+.consist-page .consist-card .card-container .card p{
+    color: var(--text-dimmed);
+    font-weight: 500;
+    height: 120px;
+}
+
+.consist-page .consist-card .card-container .card a{
+    width: fit-content;
+}
+
+.consist-page .consist-card .card-container .card a i{
+    transition: 200ms ease-in-out;
+}
+
+.consist-page .consist-card .card-container .card a:hover i{
+    transform: translateX(10px);
+}
+
+.consist-page .consist-slider .tittle-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 200px;
+}
+
+.consist-page .consist-slider .tittle-box .tittle:last-child{
+    align-self: flex-end;
+}
+
+.consist-page .consist-slider .tittle-box .tittle h2, p{
+    color: #fff;
+}
+
+.consist-page .consist-slider .slider-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.consist-page .consist-slider .slider-container .card{
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--text-dimmed);
+    background-color: var(--box-btn-color);
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.consist-page .consist-slider .slider-container .card h2{
+    color: var(--second-color);
+    background-color: #3e3d3f;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.consist-page .consist-slider .slider-container .card h3{
+    color: #fff;
+}
+
+.consist-page .consist-slider .slider-container .card p{
+    text-align: center;
+    color: var(--text-dimmed);
+    font-weight: 500;
+}
+
+.consist-page .consist-slider .slider-container .slider-button{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.consist-page .consist-slider .slider-container .slider-button i{
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+    background-color: #111010;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.consist-page .consist-slider .slider-container .slider-button #btnLeft{
+    left: -30px;
+}
+.consist-page .consist-slider .slider-container .slider-button #btnRight{
+    right: -30px;
+}
+
 /* MOTIVATION PAGE */
 .motivation-page {
     padding: 150px 50px;
@@ -634,7 +815,6 @@ body.loginPop, body.regisPop{
     font-size: 24px;    
     color: white;
     width: 55%;
-   
 }
 
 .motivation-page .motivation-box .btn button {
@@ -672,6 +852,7 @@ body.loginPop, body.regisPop{
 .motivation-page .motivation-box .copied.removed {
     display: none;
 }
+
 
 /*================== RESPONSIVE ==================*/
 /* ***** TABLET ***** */
@@ -765,6 +946,35 @@ body.loginPop, body.regisPop{
         padding-right: 50px;
     }
 
+    /* CONSIST PAGE */
+    .consist-page .consist-card .card-container{
+        grid-template-columns: repeat(2, 350px);
+        gap: 50px;
+    }
+
+    .consist-page .consist-slider{
+        gap: 50px;
+    }
+
+    .consist-page .consist-slider .tittle-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .consist-page .consist-slider .slider-container{
+        grid-template-columns: 500px;
+    }
+
+    .consist-page .consist-slider .slider-container .card:first-child{
+        display: none;
+    }
+
+    .consist-page .consist-slider .slider-container .card:nth-child(3){
+        display: none;
+    }
+
     /* MOTIVATION PAGE */
     .motivation-page {
         padding: 150px 20px;
@@ -776,12 +986,11 @@ body.loginPop, body.regisPop{
     }
 
     .motivation-page .motivation-box{
-width: 100%;
+        width: 100%;
     }
 
     .motivation-page .motivation-box .motivation-text h2{
         font-size: 20px;
-        
     }
 
     .motivation-page .motivation-box .motivation-text p{
@@ -791,7 +1000,6 @@ width: 100%;
     .motivation-page .motivation-box .motivation-list{
         font-size: 18px;
     }
-
 }
 
 /* ***** MOBILE ***** */
@@ -820,21 +1028,10 @@ width: 100%;
         width: 420px;
         height: 330px;
     }
-
-    /* MOTIVATION PAGE */
-    .motivation-page .motivation-box .copy {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-        line-height: 32px;
-        margin-top: 50px;
-    }
-
 }
 
 /* ***** MOBILE M ***** */
 @media screen and (max-width: 375px) {
-
     /* MOTIVATION PAGE */
     .motivation-page {
         padding: 150px 20px;
@@ -847,7 +1044,7 @@ width: 100%;
 
     .motivation-page .motivation-box{
         width: 100%;
-        padding: 50px10px;
+        padding: 50px;
     }
 
     .motivation-page .motivation-box .motivation-text h2{
