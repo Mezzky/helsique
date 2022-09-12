@@ -77,4 +77,3 @@ copy.addEventListener('click', () => {
     copied.classList.remove('removed');
     
 });
-
