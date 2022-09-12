@@ -767,6 +767,126 @@ body.loginPop, body.regisPop{
     right: -30px;
 }
 
+/* FAQ PAGE */
+.faq-page{
+    display: flex;
+    flex-direction: column;
+    padding: 120px 50px;
+    gap: 50px;
+}
+
+.faq-page .tittle-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.faq-page .tittle-box .tittle:last-child{
+    align-self: flex-end;
+}
+
+.faq-page .tittle-box .tittle h2{
+    max-width: 400px;
+    font-size: 25px;
+}
+
+.faq-page .tittle-box .tittle p{
+    max-width: 400px;
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.faq-page .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.faq-page .content .img-box{
+    display: flex;
+}
+
+.faq-page .content .img-box img{
+    transform: scale(.9);
+}
+
+.faq-page .content .list-quest{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.faq-page .content .list-quest .btnAsk{
+    background-color: var(--main-color);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.faq-page .content .list-quest .btnAsk:hover{
+    background-color: #444047;
+}
+
+.faq-page .content .list-quest .quest{
+    border: 2px solid var(--main-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.faq-page .content .list-quest .quest h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-page .content .list-quest .quest p{
+    color: var(--text-dimmed);
+}
+
+.faq-page .content .list-quest .quest:first-child{
+    background-color: var(--main-color);
+}
+
+.faq-page .content .list-quest .quest:first-child h3{
+    color: #fff;
+}
+
+footer{
+    background-color: var(--main-color);
+    padding: 100px 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+footer .box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+footer .box h2, h3{
+    color: #fff;
+}
+
+footer .box p{
+    color: var(--text-dimmed);
+}
+
+footer .box ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .box ul li a{
+    color: var(--text-dimmed);
+}
+
 /* MOTIVATION PAGE */
 .motivation-page {
     padding: 150px 50px;
@@ -844,7 +964,6 @@ body.loginPop, body.regisPop{
     line-height: 42px;
     cursor: pointer;
 }
-
 
 .motivation-page .motivation-box .copy-text.removed {
     display: none;
@@ -974,6 +1093,27 @@ body.loginPop, body.regisPop{
 
     .consist-page .consist-slider .slider-container .card:nth-child(3){
         display: none;
+    }
+
+    /* FAQ PAGE */
+    .faq-page .tittle-box{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .faq-page .content{
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .faq-page .content .img-box{
+        justify-content: center;
+    }
+
+    /* FOOTER */
+    footer{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* MOTIVATION PAGE */
