@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helsique - Motivasi</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <!-- HEADER -->
+      <header>
+        <h1 class="logo"><a href="#home">Helsique</a></h1>
+        <div class="navbar">
+            <nav>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#why">Kenapa</a></li>
+                <li><a href="#start">Memulai</a></li>
+                <li><a href="#">Konsisten</a></li>
+                <li><a href="#">Kontak</a></li>
+            </nav>
+            <div class="btn">
+                <a id="login">Masuk</a>
+                <a id="register">Daftar</a>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- POPUP BOX -->
+    <section class="overlay">
+        <div id="loginBox" class="popup">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <h2>Halo Kawan 👊, <span class="active-bg">Selamat Datang!</span></h2>
+            <h3>Masukan Akun</h3>
+            <p>Masukan akunmu untuk mengakses lebih banyak fitur dari platform kami </p>
+            <form action="">
+                <div class="input-box">
+                    <label for="usernameEmail">Email/Username</label>
+                    <input type="text" autocomplete="off" name="usernameEmail">
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" autocomplete="off" name="password">
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="remember">
+                    <label for="remember">Ingat Saya</label>
+                </div>
+                <button type="submit">Masuk</button>
+            </form>
+            <p>Belum punya akun? <a id="registerLink" >Daftar Disini</a></p>
+        </div>
+
+        <div id="registerBox" class="popup">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <h2>Halo Kawan 👊, <span class="active-bg">Selamat Datang!</span></h2>
+            <h3>Daftar Akun</h3>
+            <p>Daftar untuk mendapatkan info seputar olahraga dan kesehatan fisik tiap harinya dari kami</p>
+            <form action="">
+                <div class="input-box">
+                    <label for="usernameEmail">Email/Username</label>
+                    <input type="text" autocomplete="off" name="usernameEmail">
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" autocomplete="off" name="password">
+                </div>
+                <div class="input-box">
+                    <label for="confirmPass">Confirm Password</label>
+                    <input type="password" autocomplete="off" name="confirmPass">
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="remember">
+                    <label for="remember">Beritahu saya jika ada informasi terbaru</label>
+                </div>
+                <button type="submit">Daftar</button>
+            </form>
+            <p>Belum punya akun? <a id="loginLink" >Masuk Disini</a></p>
+        </div>
+    </section>
+
+    <!-- Motivation Page -->
+    <section id="motivation" class="motivation-page">
+        <h2 class="motivation-header">Kumpulan motivasi yang bisa membuatmu semakin <span class="active-bg">semangat berolahraga</span></h2>
+        <div class="motivation-box">
+                <div class="motivation-text">
+                  <h2>Helsique</h2>
+                  <p>Lihat motivasi dari orang lain yang bisa membuat kamu menjadi lebih semangat !</p>
+                </div>
+                <div class="motivation-list">Klik tombol dibawah untuk melihat motivasi</div>
+                <div class="btn">
+                  <button id="button">Lihat Motivasi</button>
+                </div>
+                <div class="copy">
+                    <i class="fa-solid fa-copy copy-text"></i>
+                    <i class="fa-solid fa-check copied removed"></i>
+                  </div>
+        </div>
+    </section>
+
+    <script src="script.js" ></script>
+</body>
+</html>

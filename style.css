@@ -64,7 +64,6 @@ input:focus{
 .active-bg{
     background-color: var(--second-color);
     padding: 0 5px;
-    color: var(--main-color);
 }
 
 .active-text{
@@ -231,6 +230,8 @@ header.scrolled{
 }
 body.loginPop, body.regisPop{
     overflow: hidden;
+    transition: 300ms ease-in-out;
+    /* position: fixed; */
 }
 
 .overlay .popup{
@@ -436,7 +437,7 @@ body.loginPop, body.regisPop{
     transition: 100ms linear;
 }
 .home-page .motivation a:hover i{
-    transform: translateX(10px);
+    margin-left: 10px;
 }
 
 .home-page .status{
@@ -570,7 +571,7 @@ body.loginPop, body.regisPop{
     transition: 100ms linear;
 }
 .start-page a:hover i{
-    transform: translateX(10px);
+    margin-left: 10px;
 }
 
 .start-page .start-img{
@@ -764,6 +765,93 @@ body.loginPop, body.regisPop{
     right: -30px;
 }
 
+/* MOTIVATION PAGE */
+.motivation-page {
+    padding: 150px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    height: auto;
+}
+
+.motivation-page .motivation-header {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+    
+}
+
+.motivation-page .motivation-box {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: var(--main-color);
+    min-height: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 18px 21px 31px rgba(0, 0, 0, 0.25);
+    padding: 50px 20px;
+    text-align: center;
+    
+}
+
+.motivation-page .motivation-box .motivation-text h2 {
+    font-size: 28px;
+    color: white;
+}
+
+.motivation-page .motivation-box .motivation-text p {
+    margin: 20px auto;
+    font-size: 20px;
+    color: var(--text-dimmed);
+    width: 60%;
+}
+
+.motivation-page .motivation-list {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 24px;    
+    color: white;
+    width: 55%;
+}
+
+.motivation-page .motivation-box .btn button {
+    margin-top: 50px;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--second-color);
+    box-shadow: 0px 4px 21px rgba(255, 255, 255, 0.25);
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.motivation-page .motivation-box .copy {
+    margin-bottom: -30px;
+    font-size: 20px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: solid 4px white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+
+.motivation-page .motivation-box .copy-text.removed {
+    display: none;
+}
+
+.motivation-page .motivation-box .copied.removed {
+    display: none;
+}
 
 
 /*================== RESPONSIVE ==================*/
@@ -886,6 +974,32 @@ body.loginPop, body.regisPop{
     .consist-page .consist-slider .slider-container .card:nth-child(3){
         display: none;
     }
+
+    /* MOTIVATION PAGE */
+    .motivation-page {
+        padding: 150px 20px;
+    }
+
+    .motivation-page .motivation-header {
+        font-size: 26px;
+        width: 90%;
+    }
+
+    .motivation-page .motivation-box{
+        width: 100%;
+    }
+
+    .motivation-page .motivation-box .motivation-text h2{
+        font-size: 20px;
+    }
+
+    .motivation-page .motivation-box .motivation-text p{
+        font-size: 18px;
+    }
+
+    .motivation-page .motivation-box .motivation-list{
+        font-size: 18px;
+    }
 }
 
 /* ***** MOBILE ***** */
@@ -918,7 +1032,35 @@ body.loginPop, body.regisPop{
 
 /* ***** MOBILE M ***** */
 @media screen and (max-width: 375px) {
-    
+    /* MOTIVATION PAGE */
+    .motivation-page {
+        padding: 150px 20px;
+    }
+
+    .motivation-page .motivation-header {
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .motivation-page .motivation-box{
+        width: 100%;
+        padding: 50px;
+    }
+
+    .motivation-page .motivation-box .motivation-text h2{
+        font-size: 20px;
+        
+    }
+
+    .motivation-page .motivation-box .motivation-text p{
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .motivation-page .motivation-box .motivation-list{
+        font-size: 18px;
+        width: 80%;
+    }
 }
 
 /* ***** MOBILE S ***** */
