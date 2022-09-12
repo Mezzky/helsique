@@ -11,6 +11,9 @@ const loginLink = document.querySelector('.overlay .popup #loginLink');
 const registerLink = document.querySelector('.overlay .popup #registerLink');
 const popup = document.querySelectorAll('.overlay .popup');
 const close = document.querySelectorAll('.overlay .popup i');
+const motivationBtn = document.querySelector('.motivation-page .motivation-box .btn');
+const copy = document.querySelector('.motivation-page .motivation-box .copy-text');
+const copied = document.querySelector('.motivation-page .motivation-box .copied');
 
 // Navbar Scroll
 window.addEventListener('scroll', () =>{
@@ -61,3 +64,17 @@ close.forEach(el => {
         document.body.classList.remove('loginPop');
     });
 });
+
+// Copy Button & Motivasi Button
+motivationBtn.addEventListener('click', () => {
+    copy.classList.remove('removed');
+    copied.classList.add('removed');
+    
+});
+
+copy.addEventListener('click', () => {
+    copy.classList.add('removed');
+    copied.classList.remove('removed');
+    
+});
+
