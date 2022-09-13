@@ -653,12 +653,15 @@ body.loginPop, body.regisPop{
     padding: 30px 20px;
     border-radius: 20px;
     border: 1px solid var(--text-dimmed);
+    transform-style: preserve-3d;
+    overflow: hidden;
 }
 
 .consist-page .consist-card .card-container .card .img-box{
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateZ(10px);
 }
 
 .consist-page .consist-card .card-container .card .img-box img{
