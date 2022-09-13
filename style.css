@@ -654,6 +654,7 @@ body.loginPop, body.regisPop{
     padding: 30px 20px;
     border-radius: 20px;
     border: 1px solid var(--text-dimmed);
+    overflow: hidden;
 }
 
 .consist-page .consist-card .card-container .card .img-box{

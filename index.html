@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
+    <!-- Jquery CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <h1 class="logo"><a href="#home">Helsique</a></h1>
+        <h1 class="logo"><a href="#home">Helsiqu
+            e</a></h1>
         <div class="navbar">
             <nav>
                 <li><a href="#home">Beranda</a></li>
@@ -182,7 +185,7 @@
         <section class="consist-card">
             <h2>Cara awal untuk membangun <br> <span class="active-bg">Kebiasan Berolahraga</span></h2>
             <div class="card-container">
-                <div class="card">
+                <div class="card" data-tilt>
                     <div class="img-box">
                         <img src="assets/alarm-img.svg">
                     </div>
@@ -190,7 +193,7 @@
                     <p>Tentukan apakah Anda bisa tetap berolahraga di pagi, siang, atau malam hari, dan  tetap lakukan pada waktu itu</p>
                     <a>Selengkapnnya <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div class="card">
+                <div class="card" data-tilt>
                     <div class="img-box">
                         <img src="assets/reminder-img.svg">
                     </div>
@@ -198,7 +201,7 @@
                     <p>Buat pengingat melalui email atau teks agar Anda tidak lupa untuk berolahraga. Kemudian segera lakukan jangan sampai ditunda</p>
                     <a>Selengkapnnya <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div class="card">
+                <div class="card" data-tilt>
                     <div class="img-box">
                         <img src="assets/smallStep-img.svg">
                     </div>
@@ -206,7 +209,7 @@
                     <p>Kuncinya lakukan 20 menit di awal dengan baik & mudah. Tidak ada yang susah. Bahkan 10-15 menit sangat baik ketika baru memulai</p>
                     <a>Selengkapnnya <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div class="card">
+                <div class="card" data-tilt>      
                     <div class="img-box">
                         <img src="assets/grandpa-img.svg">
                     </div>
@@ -214,7 +217,7 @@
                     <p>Berfokus pada kesenangan. Pergi perlahan, nikmati pemandangan, udara yang segar, berpikir tenang, dan mendengarkan musik</p>
                     <a>Selengkapnnya <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div class="card">
+                <div class="card" data-tilt>
                     <div class="img-box">
                         <img src="assets/rest-img.svg">
                     </div>
@@ -222,7 +225,7 @@
                     <p>Pemulihan sangat penting! Itulah sebabnya beri tubuh Anda kesempatan untuk beristirahat. Memilki 1 hari istirahat itu bagus</p>
                     <a>Selengkapnnya <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div class="card">
+                <div class="card" data-tilt>
                     <div class="img-box">
                         <img src="assets/dmbShoes-img.svg">
                     </div>
@@ -332,8 +335,16 @@
             </ul>
         </div>
     </footer>
-
+    <!-- Tiltjs CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Vanilla Javascript -->
     <script src="script.js"></script>
+    <!-- Script Tilt -->
+    <script>
+        $('.consist-page .card-container .card').tilt({
+        glare: true,
+        maxGlare: .5
+        });
+    </script>
 </body>
-</html>
+</html> 
