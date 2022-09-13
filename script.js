@@ -75,10 +75,3 @@ copy.addEventListener('click', () => {
     copy.classList.add('removed');
     copied.classList.remove('removed');
 });
-
-// Tilt JS
-$('.consist-page .consist-card .card-container .card').tilt({
-    glare: true,
-    maxGlare: 0.5   ,
-    reset: false
-    });
