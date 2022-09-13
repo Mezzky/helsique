@@ -831,6 +831,7 @@ body.loginPop, body.regisPop{
 }
 
 footer{
+    position: relative;
     background-color: var(--main-color);
     padding: 100px 80px;
     display: grid;
@@ -862,6 +863,7 @@ footer .box ul{
 footer .box ul li a{
     color: var(--text-dimmed);
     position: relative;
+    z-index: 1;
 }
 
 footer .box ul li a::after{
@@ -876,6 +878,89 @@ footer .box ul li a::after{
 }
 footer .box ul li a:hover::after {
     width: 100%;
+}
+
+footer .chat{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+footer .chat > i{
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #74FAB1;
+    font-size: 30px;
+    padding: 10px;
+    transition: 100ms ease;
+}
+footer .chat > i:hover{
+    color: #ddd;
+    background-color: #4fbb80;
+}
+
+footer .chat .chat-box{
+    visibility: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    z-index: 100;
+    background-color: var(--box-btn-color);
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .chat .chat-box.slide{
+    visibility: visible;
+}
+
+footer .chat .chat-box i{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    color: var(--second-color);
+}
+
+footer .chat .chat-box h3{
+    font-weight: 500;
+}
+
+footer .chat .chat-box p{
+    color: var(--text-dimmed);
+    font-size: 14px;
+}
+
+footer .chat .chat-box .message{
+    display: flex;
+    gap: 10px;
+}
+
+footer .chat .chat-box .message input[type=text]{
+    background-color: var(--box-btn-color);
+    border: 1px solid var(--text-dimmed);
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+footer .chat .chat-box .message button{
+    cursor: pointer;
+    background-color: #c59d0c;
+    border: none;
+    font-weight: 500;
+    padding: 3px 8px;
+    color: #fff;
+    border-radius: 5px;
+    transition: 100ms ease;
+}
+footer .chat .chat-box .message button:hover{
+    background-color: #ddb833;
 }
 
 /* MOTIVATION PAGE */
