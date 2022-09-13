@@ -203,7 +203,7 @@ header .navbar .btn a:last-child{
 }
 
 header.scrolled{
-    margin-top: 30px;
+    margin-top: 20px;
     width: 95%;
     border-radius: 20px;
     border: 2px solid var(--main-color);
@@ -231,8 +231,6 @@ header.scrolled{
 }
 body.loginPop, body.regisPop{
     overflow: hidden;
-    transition: 300ms ease-in-out;
-    /* position: fixed; */
 }
 
 .overlay .popup{
@@ -310,7 +308,7 @@ body.loginPop, body.regisPop{
     transform: scale(0);
     gap: 10px;
     max-width: 500px;
-    transition: 300ms ease-in-out 500ms;
+    transition: 300ms ease-in-out;
 }
 .overlay #registerBox.regisPop{
     visibility: visible;
@@ -330,7 +328,7 @@ body.loginPop, body.regisPop{
     visibility: hidden;
     opacity: 0;
     transform: scale(0);
-    transition: 300ms ease-in-out 500ms;
+    transition: 300ms ease-in-out;
 }
 .overlay #loginBox.loginPop{
     visibility: visible;
@@ -595,7 +593,7 @@ body.loginPop, body.regisPop{
     gap: 200px;
     position: relative;
     background-color: var(--main-color);
-    padding: 150px 80px;
+    padding: 100px 80px;
     overflow: hidden;
 }
 
@@ -608,6 +606,7 @@ body.loginPop, body.regisPop{
     width: 600px;
     height: 600px;
     filter: blur(50px);
+    animation: scale 10s linear infinite reverse;
 }
 .consist-page .shape.one{
     background-color: rgba(116, 250, 177, 30%);
@@ -630,7 +629,7 @@ body.loginPop, body.regisPop{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
+    gap: 30px;
 }
 
 .consist-page .consist-card h2{
@@ -649,9 +648,9 @@ body.loginPop, body.regisPop{
     z-index: 10;
     background-color: var(--box-btn-color);
     display: flex;
-    gap: 30px;
+    gap: 15px;
     flex-direction: column;
-    padding: 30px 20px;
+    padding: 20px;
     border-radius: 20px;
     border: 1px solid var(--text-dimmed);
     overflow: hidden;
@@ -661,6 +660,7 @@ body.loginPop, body.regisPop{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .consist-page .consist-card .card-container .card .img-box img{
@@ -675,11 +675,16 @@ body.loginPop, body.regisPop{
 .consist-page .consist-card .card-container .card p{
     color: var(--text-dimmed);
     font-weight: 500;
-    height: 120px;
+    height: 100px;
 }
 
 .consist-page .consist-card .card-container .card a{
     width: fit-content;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: 500;
+    border-radius: 5px;
 }
 
 .consist-page .consist-card .card-container .card a i{
@@ -691,10 +696,12 @@ body.loginPop, body.regisPop{
 }
 
 .consist-page .consist-slider .tittle-box{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 400px;
     align-items: center;
-    gap: 200px;
+    justify-content: space-between;
+    gap: 100px;
 }
 
 .consist-page .consist-slider .tittle-box .tittle:last-child{
@@ -725,7 +732,7 @@ body.loginPop, body.regisPop{
 .consist-page .consist-slider .slider-container .card h2{
     color: var(--second-color);
     background-color: #3e3d3f;
-    width: 80px;
+    padding: 20px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -743,43 +750,20 @@ body.loginPop, body.regisPop{
     font-weight: 500;
 }
 
-/* .consist-page .consist-slider .slider-container .slider-button{
-    position: absolute;
-    top: 50%;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.consist-page .consist-slider .slider-container .slider-button i{
-    cursor: pointer;
-    position: absolute;
-    color: #fff;
-    background-color: #111010;
-    padding: 20px;
-    font-size: 20px;
-    border-radius: 50%;
-}
-
-.consist-page .consist-slider .slider-container .slider-button #btnLeft{
-    left: -30px;
-}
-.consist-page .consist-slider .slider-container .slider-button #btnRight{
-    right: -30px;
-} */
-
 /* FAQ PAGE */
 .faq-page{
     display: flex;
     flex-direction: column;
     padding: 120px 50px;
-    gap: 50px;
+    gap: 20px;
 }
 
 .faq-page .tittle-box{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 600px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .faq-page .tittle-box .tittle:last-child{
@@ -787,7 +771,7 @@ body.loginPop, body.regisPop{
 }
 
 .faq-page .tittle-box .tittle h2{
-    max-width: 400px;
+    max-width: 500px;
     font-size: 25px;
 }
 
@@ -800,32 +784,24 @@ body.loginPop, body.regisPop{
 
 .faq-page .content{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
 .faq-page .content .img-box{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.faq-page .content .img-box img{
-    transform: scale(.9);
+.faq-page .content img{
+    width: 430px;
 }
 
 .faq-page .content .list-quest{
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
-
-.faq-page .content .list-quest .btnAsk{
-    background-color: var(--main-color);
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-.faq-page .content .list-quest .btnAsk:hover{
-    background-color: #444047;
 }
 
 .faq-page .content .list-quest .quest{
@@ -839,11 +815,7 @@ body.loginPop, body.regisPop{
     height: auto;
 }
 
-.faq-page .content .list-quest .quest.showAnswer{
-    background-color: var(--main-color);
-}
-
-.faq-page .content .list-quest .quest h3{
+.faq-page .content .list-quest .quest h4{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -854,23 +826,15 @@ body.loginPop, body.regisPop{
     display: none;
 }
 
-.faq-page .content .list-quest .quest h3{
+.faq-page .content .list-quest .quest h4{
     color: var(--main-color);
-}
-
-.faq-page .content .list-quest .quest.showAnswer h3{   
-    color: white;
-}
-    
-.faq-page .content .list-quest .quest.showAnswer p {
-    display: inherit;
 }
 
 footer{
     background-color: var(--main-color);
     padding: 100px 80px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 2fr 1fr 1.5fr 1fr;
     gap: 50px;
 }
 
@@ -897,6 +861,21 @@ footer .box ul{
 
 footer .box ul li a{
     color: var(--text-dimmed);
+    position: relative;
+}
+
+footer .box ul li a::after{
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    position: absolute;
+    height: 2px;
+    background-color: var(--text-dimmed);
+    transition: 200ms ease-in;
+}
+footer .box ul li a:hover::after {
+    width: 100%;
 }
 
 /* MOTIVATION PAGE */
@@ -1081,7 +1060,11 @@ footer .box ul li a{
     /* CONSIST PAGE */
     .consist-page .consist-card .card-container{
         grid-template-columns: repeat(2, 300px);
-        gap: 50px;
+        gap: 20px;
+    }
+
+    .consist-page .consist-card .card-container .card p{
+        height: 120px;
     }
 
     .consist-page .consist-slider{
@@ -1569,11 +1552,25 @@ footer .box ul li a{
 
 @keyframes spin {
     0%{
-        transform: rotateY(0deg);
+        transform: rotate(0deg);
     }
     
     100%{
-        transform: rotateY(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale {
+    0%{
+        transform: scale(1);
+    }
+    
+    50%{
+        transform: scale(1.3);
+    }
+
+    100%{
+        transform: scale(1);
     }
 }
 
