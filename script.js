@@ -78,3 +78,18 @@ copy.addEventListener('click', () => {
     
 });
 
+$(document).ready(() => {
+    const quotes = [
+        "Hah? Apa? smeneamsn",
+        "Farhan Kebab",
+        "Samsudin Jadab",
+        "bruakakakaak",
+        "wkwkwkwkwkwkw",
+        "SIUUUUUUUU"
+    ];
+
+    $('#button').click(() => {
+        let randomNumber = Math.floor(Math.random() * (quotes.length));
+        $('.motivation-list').html(quotes[randomNumber]);
+    });
+});
