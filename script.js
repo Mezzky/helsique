@@ -14,6 +14,8 @@ const close = document.querySelectorAll('.overlay .popup i');
 const motivationBtn = document.querySelector('.motivation-page .motivation-box .btn');
 const copy = document.querySelector('.motivation-page .motivation-box .copy-text');
 const copied = document.querySelector('.motivation-page .motivation-box .copied');
+const chat = document.querySelector('footer .chat > i');
+const chatBox = document.querySelector('footer .chat .chat-box');
 
 // Navbar Scroll
 window.addEventListener('scroll', () =>{
@@ -78,6 +80,7 @@ copy.addEventListener('click', () => {
     
 });
 
+// Motivation Generator
 $(document).ready(() => {
     const quotes = [
         "Hah? Apa? smeneamsn",
@@ -92,4 +95,9 @@ $(document).ready(() => {
         let randomNumber = Math.floor(Math.random() * (quotes.length));
         $('.motivation-list').html(quotes[randomNumber]);
     });
+});
+
+// Popup Chat Box
+chat.addEventListener('click', () =>{
+    chatBox.classList.add('show');
 });
