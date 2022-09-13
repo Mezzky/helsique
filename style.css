@@ -706,10 +706,7 @@ body.loginPop, body.regisPop{
 }
 
 .consist-page .consist-slider .slider-container{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    width: 100%;
 }
 
 .consist-page .consist-slider .slider-container .card{
@@ -721,13 +718,14 @@ body.loginPop, body.regisPop{
     gap: 40px;
     flex-direction: column;
     align-items: center;
+    height: 400px;
+    margin: 0 10px;
 }
 
 .consist-page .consist-slider .slider-container .card h2{
     color: var(--second-color);
     background-color: #3e3d3f;
     width: 80px;
-    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -736,6 +734,7 @@ body.loginPop, body.regisPop{
 
 .consist-page .consist-slider .slider-container .card h3{
     color: #fff;
+    text-align: center;
 }
 
 .consist-page .consist-slider .slider-container .card p{
@@ -836,6 +835,12 @@ body.loginPop, body.regisPop{
     flex-direction: column;
     gap: 10px;
     border-radius: 20px;
+    overflow: hidden;
+    height: auto;
+}
+
+.faq-page .content .list-quest .quest.showAnswer{
+    background-color: var(--main-color);
 }
 
 .faq-page .content .list-quest .quest h3{
@@ -846,18 +851,19 @@ body.loginPop, body.regisPop{
 
 .faq-page .content .list-quest .quest p{
     color: var(--text-dimmed);
-}
-
-.faq-page .content .list-quest .quest:first-child{
-    background-color: var(--main-color);
-}
-
-.faq-page .content .list-quest .quest:first-child h3{
-    color: #fff;
+    display: none;
 }
 
 .faq-page .content .list-quest .quest h3{
     color: var(--main-color);
+}
+
+.faq-page .content .list-quest .quest.showAnswer h3{   
+    color: white;
+}
+    
+.faq-page .content .list-quest .quest.showAnswer p {
+    display: inherit;
 }
 
 footer{
@@ -1087,6 +1093,10 @@ footer .box ul li a{
         grid-template-columns: 1fr;
         align-items: center;
         gap: 30px;
+    }
+
+    .consist-page .consist-slider .slider-container .card {
+        padding: 50px 20px;
     }
 
     .consist-page .consist-slider .slider-container{
