@@ -855,6 +855,10 @@ body.loginPop, body.regisPop{
     color: #fff;
 }
 
+.faq-page .content .list-quest .quest h3{
+    color: var(--main-color);
+}
+
 footer{
     background-color: var(--main-color);
     padding: 100px 80px;
@@ -1158,7 +1162,6 @@ footer .box ul li a{
 
     .home-page .home-img img{
         width: 330px;
-        height: 285px;
     }
 
     .home-page .content p {
@@ -1227,7 +1230,30 @@ footer .box ul li a{
     }
 
     .consist-page .consist-card .card-container {
-        grid-template-columns: repeat(1, 300px);
+        grid-template-columns: repeat(1, 330px);
+    }
+
+    /* FAQ */
+    .faq-page {
+        gap: 30px;
+    }
+
+    .faq-page .content {
+        grid-template-columns: 100%;
+    }
+
+    .faq-page .content .img-box img {
+        width: 420px;
+    }
+
+    /* FOOTER */
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 100px 30px;
+    }
+
+    footer .box {
+        gap: 10px;
     }
 }
 
@@ -1266,6 +1292,23 @@ footer .box ul li a{
     /* CONSISTENT PAGE */
     .consist-page .consist-card h2 {
         width: 300px;
+    }
+
+    /* FAQ */
+    .faq-page .content .list-quest .quest {
+        border-radius: 10px;
+    }
+
+    .faq-page .tittle-box .tittle h2 {
+        font-size: 20px;
+    }
+
+    .faq-page .tittle-box .tittle p {
+        font-size: 16px;
+    }
+
+    .faq-page .content .img-box img {
+        width: 370px;
     }
 }
 
@@ -1353,6 +1396,15 @@ footer .box ul li a{
     /* CONSISTENT PAGE */
     .consist-page {
         padding: 150px 30px;
+    }
+
+    /* FAQ */
+    .faq-page .content .img-box img {
+        width: 320px;
+    }
+
+    .faq-page .content .list-quest .quest h3 {
+        font-size: 18px;
     }
 }
 
@@ -1446,6 +1498,36 @@ footer .box ul li a{
 
     .consist-page .consist-card .card-container {
         grid-template-columns: repeat(1, 250px);
+    }
+
+    /* FAQ */
+    .faq-page .tittle-box .tittle h2 {
+        font-size: 20px;
+    }
+
+    .faq-page .tittle-box .tittle p {
+        font-size: 16px;
+    }
+
+    .faq-page .content .img-box img {
+        width: 260px;
+    }
+
+    .faq-page .content .list-quest .quest h3 {
+        font-size: 16px;
+    }
+
+    .faq-page .content .list-quest .quest p {
+        font-size: 14px;
+    }
+
+    .faq-page .content .list-quest .btnAsk {
+        padding: 8px 18px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 100px 10px;
     }
 }
 
