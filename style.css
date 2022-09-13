@@ -743,7 +743,7 @@ body.loginPop, body.regisPop{
     font-weight: 500;
 }
 
-.consist-page .consist-slider .slider-container .slider-button{
+/* .consist-page .consist-slider .slider-container .slider-button{
     position: absolute;
     top: 50%;
     display: flex;
@@ -766,7 +766,7 @@ body.loginPop, body.regisPop{
 }
 .consist-page .consist-slider .slider-container .slider-button #btnRight{
     right: -30px;
-}
+} */
 
 /* FAQ PAGE */
 .faq-page{

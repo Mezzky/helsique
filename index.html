@@ -20,8 +20,7 @@
 <body>
     <!-- HEADER -->
     <header>
-        <h1 class="logo"><a href="#home">Helsiqu
-            e</a></h1>
+        <h1 class="logo"><a href="#home">Helsique</a></h1>
         <div class="navbar">
             <nav>
                 <li><a href="#home">Beranda</a></li>
@@ -354,7 +353,7 @@
             </ul>
         </div>
     </footer>
-    <!-- Slick JS -->
+    <!-- Slick JS CDNJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Tiltjs CDNJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -362,14 +361,18 @@
     <script src="script.js"></script>
     <!-- Script Tilt -->
     <script>
+        // Tilt JS
         $('.consist-page .card-container .card').tilt({
+        maxTilt: 5,
         glare: true,
         maxGlare: .5
         });
+
+        // Slick JS
         $('.consist-slider .slider-container').slick({
         dots: false,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 3,
         responsive: [
@@ -398,7 +401,6 @@
             }
         ]
         });
-                        
     </script>
 </body>
 </html> 
