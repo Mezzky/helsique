@@ -51,6 +51,7 @@ $(document).ready(() => {
         });
     });
 
+
     // Copy to Clipboard
     copyToClipboard = (el) => {
         let $temp = $('<input>');
