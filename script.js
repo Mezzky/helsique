@@ -93,7 +93,7 @@ $(document).ready(() => {
         '"Tubuh yang lemah melemahkan pikiran."',
         '"Jika menurutmu mengangkat beban itu berbahaya, cobalah menjadi lemah. Menjadi lemah itu berbahaya."',
         '"Tubuh manusia adalah gambaran terbaik dari jiwa manusia."',
-        '"Jam terus berdetak. Apakah kamu menjai orang yang kamu inginkan?"',
+        '"Jam terus berdetak. Apakah kamu menjadi orang yang kamu inginkan?"',
         '"Fokus. Fokus. Fokus."',
         '"Olahraga adalah raja. Nutrisi adalah ratu. Satukan mereka dan kamu punya kerajaan."',
         '"Disiplin adalah jembatan antara tujuan dan pencapaian."',
