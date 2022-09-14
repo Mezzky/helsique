@@ -921,7 +921,7 @@ footer .chat .chat-box{
     flex-direction: column;
     gap: 20px;
 }
-footer .chat .chat-box.slide{
+footer .chat .chat-box.show{
     visibility: visible;
 }
 
