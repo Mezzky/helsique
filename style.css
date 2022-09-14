@@ -922,6 +922,10 @@ footer .chat {
 }
 
 footer .chat>i {
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    left: 10px;
     border-radius: 10px;
     cursor: pointer;
     color: #fff;
@@ -937,9 +941,10 @@ footer .chat>i:hover {
 }
 
 footer .chat .chat-box {
+    display: none;
     visibility: hidden;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     z-index: 100;
     background-color: var(--box-btn-color);
     width: 300px;
@@ -951,6 +956,7 @@ footer .chat .chat-box {
 }
 
 footer .chat .chat-box.show {
+    display: flex;
     visibility: visible;
 }
 
@@ -994,7 +1000,6 @@ footer .chat .chat-box .message button {
     padding: 3px 8px;
     color: #fff;
     border-radius: 5px;
-    transition: 100ms ease;
 }
 
 footer .chat .chat-box .message button:hover {
