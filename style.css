@@ -973,14 +973,24 @@ footer .chat .chat-box .message button:hover{
 
 /* MOTIVATION PAGE */
 .motivation-page {
-    padding: 150px 50px;
+    background-color: var(--bg-color);
+    padding: 50px 100px;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    height: auto;
+    align-items: center;
 }
 
-.motivation-page .motivation-header {
+.motivation-page a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-bottom-right-radius: 50%;
+}
+
+.motivation-page h2 {
     margin: 0 auto;
     text-align: center;
     width: 60%;
@@ -988,44 +998,34 @@ footer .chat .chat-box .message button:hover{
 }
 
 .motivation-page .motivation-box {
+    position: relative;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    gap: 50px;
+    width: 100%;
     background-color: var(--main-color);
-    min-height: 400px;
-    height: auto;
     border-radius: 15px;
     box-shadow: 18px 21px 31px rgba(0, 0, 0, 0.25);
     padding: 50px 20px;
     text-align: center;
-    
 }
 
-.motivation-page .motivation-box .motivation-text h2 {
+.motivation-page .motivation-box h2 {
     font-size: 28px;
     color: white;
 }
 
-.motivation-page .motivation-box .motivation-text p {
+.motivation-page .motivation-list {
     margin: 20px auto;
     font-size: 20px;
     color: var(--text-dimmed);
+    margin: 0 auto;
     width: 60%;
 }
 
-.motivation-page .motivation-list {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    font-size: 24px;    
-    color: white;
-    width: 55%;
-}
-
-.motivation-page .motivation-box .btn button {
-    margin-top: 50px;
-    width: 180px;
-    height: 50px;
+.motivation-page .motivation-box button {
+    padding: 10px 30px;
     border-radius: 10px;
     background-color: var(--second-color);
     box-shadow: 0px 4px 21px rgba(255, 255, 255, 0.25);
@@ -1033,11 +1033,13 @@ footer .chat .chat-box .message button:hover{
     font-size: 16px;
     border: none;
     cursor: pointer;
-
+    margin-bottom: 50px;
 }
 
 .motivation-page .motivation-box .copy {
-    margin-bottom: -30px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     font-size: 20px;
     color: white;
     width: 50px;
@@ -1210,10 +1212,10 @@ footer .chat .chat-box .message button:hover{
 
     /* MOTIVATION PAGE */
     .motivation-page {
-        padding: 150px 20px;
+        padding: 50px;
     }
 
-    .motivation-page .motivation-header {
+    .motivation-page h2 {
         font-size: 26px;
         width: 90%;
     }
@@ -1222,11 +1224,11 @@ footer .chat .chat-box .message button:hover{
         width: 100%;
     }
 
-    .motivation-page .motivation-box .motivation-text h2{
+    .motivation-page .motivation-box h2{
         font-size: 20px;
     }
 
-    .motivation-page .motivation-box .motivation-text p{
+    .motivation-page .motivation-box p{
         font-size: 18px;
     }
 
@@ -1342,6 +1344,11 @@ footer .chat .chat-box .message button:hover{
     footer .box {
         gap: 10px;
     }
+
+    /* MOTIVATION PAGE */
+    .motivation-page{
+        padding: 30px 20px;
+    }
 }
 
 /* ***** MOBILE L ***** */
@@ -1396,6 +1403,11 @@ footer .chat .chat-box .message button:hover{
 
     .faq-page .content .img-box img {
         width: 370px;
+    }
+
+    /* MOTIVATION PAGE */
+    .motivation-page a{
+        padding: 10px;
     }
 }
 
@@ -1606,10 +1618,6 @@ footer .chat .chat-box .message button:hover{
 
     .faq-page .content .list-quest .quest p {
         font-size: 14px;
-    }
-
-    .faq-page .content .list-quest .btnAsk {
-        padding: 8px 18px;
     }
 
     /* FOOTER */
