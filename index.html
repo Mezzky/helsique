@@ -20,8 +20,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
-    <!-- Jquery CDNJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -257,7 +255,8 @@
         <section class="consist-slider">
             <div class="tittle-box">
                 <div class="tittle">
-                    <h2>Semua orang bisa memulai, tapi tidak semua orang bisa <span class="active-bg">Konsisten dan Disiplin</span></h2>
+                    <h2>Semua orang bisa memulai, tapi tidak semua orang bisa <span class="active-bg">Konsisten dan
+                            Disiplin</span></h2>
                 </div>
                 <div class="tittle">
                     <p>Kami akan membantu anda untuk <span class="active-text">konsisten berolahraga dengan tips</span>
@@ -322,19 +321,23 @@
             <div class="list-quest">
                 <details class="quest">
                     <summary>Umur 14 Tahun boleh olahraga nggak?</summary>
-                    <span>Boleh banget ya!, karena pada usia tersebut hormon pertumbuhan sedang naik drastis-drastisnya.</span>
+                    <span>Boleh banget ya!, karena pada usia tersebut hormon pertumbuhan sedang naik
+                        drastis-drastisnya.</span>
                 </details>
                 <details class="quest">
                     <summary>Olahraga bisa buat pendek ya?</summary>
-                    <span>Ini hoax ya! Olahraga sendiri tidak bisa membuat kita pendek, nyatanya olahraga mampu membantu meninggikan badan kita</span>
+                    <span>Ini hoax ya! Olahraga sendiri tidak bisa membuat kita pendek, nyatanya olahraga mampu membantu
+                        meninggikan badan kita</span>
                 </details>
                 <details class="quest">
                     <summary>Olahraga Apa sih yang cocok untuk pemula?</summary>
-                    <span>Untuk pemula kalian bisa mencoba workout untuk pemula, yaitu mencakup push up sit up dan dips, kalian juga bisa mencoba jogging dan skipping bagi yang ingin diet</span>
+                    <span>Untuk pemula kalian bisa mencoba workout untuk pemula, yaitu mencakup push up sit up dan dips,
+                        kalian juga bisa mencoba jogging dan skipping bagi yang ingin diet</span>
                 </details>
                 <details class="quest">
                     <summary>Gimana cara Menjaga pola makannya?</summary>
-                    <span>Buatlah jadwal untuk makan sehari hari, mulailah juga dari makanan yang kalian suka dan pelajari resep2 makanan yang lezat</span>
+                    <span>Buatlah jadwal untuk makan sehari hari, mulailah juga dari makanan yang kalian suka dan
+                        pelajari resep2 makanan yang lezat</span>
                 </details>
             </div>
         </div>
@@ -385,6 +388,8 @@
             </ul>
         </div>
     </footer>
+    <!-- JQuery -->
+    <script src="jquery.min.js"></script>
     <!-- Slick JS CDNJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
@@ -393,50 +398,47 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
         integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Vanilla Javascript -->
+    <!-- JavaScript -->
     <script src="script.js"></script>
-    <!-- Script Tilt -->
     <script>
-        $(document).ready(() => {
-            // Tilt JS
-            $('.consist-page .card-container .card').tilt({
-                maxTilt: 5,
-                glare: true,
-                maxGlare: .5
-            });
+        // Tilt JS
+        $('.consist-page .card-container .card').tilt({
+            maxTilt: 5,
+            glare: true,
+            maxGlare: .5
+        });
 
-            // Slick JS
-            $('.consist-slider .slider-container').slick({
-                dots: false,
-                infinite: true,
-                speed: 1000,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                responsive: [{
-                        breakpoint: 1100,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
-                            infinite: true,
-                            dots: true
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
+        // Slick JS
+        $('.consist-slider .slider-container').slick({
+            dots: false,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [{
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
                     }
-                ]
-            });
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
     </script>
 </body>
