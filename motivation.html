@@ -9,106 +9,65 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
-    <!-- Jquery CDNJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <h1 class="logo"><a href="index.html">Helsique</a></h1>
-        <div class="navbar">
-            <nav>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="index.html">Kenapa</a></li>
-                <li><a href="index.html">Memulai</a></li>
-                <li><a href="index.html">Konsisten</a></li>
-                <li><a href="index.html">Kontak</a></li>
-            </nav>
-            <div class="btn">
-                <a id="login">Masuk</a>
-                <a id="register">Daftar</a>
-            </div>
-        </div>
-        <div class="menu-toggle">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
-
-    <!-- POPUP BOX -->
-    <section class="overlay">
-        <div id="loginBox" class="popup">
-            <i class="fa-solid fa-circle-xmark"></i>
-            <h2>Halo Kawan 👊, <span class="active-bg">Selamat Datang!</span></h2>
-            <h3>Masukan Akun</h3>
-            <p>Masukan akunmu untuk mengakses lebih banyak fitur dari platform kami </p>
-            <form action="">
-                <div class="input-box">
-                    <label for="usernameEmail">Email/Username</label>
-                    <input type="text" autocomplete="off" name="usernameEmail">
-                </div>
-                <div class="input-box">
-                    <label for="password">Password</label>
-                    <input type="password" autocomplete="off" name="password">
-                </div>
-                <div class="check">
-                    <input type="checkbox" name="remember">
-                    <label for="remember">Ingat Saya</label>
-                </div>
-                <button type="submit">Masuk</button>
-            </form>
-            <p>Belum punya akun? <a id="registerLink" >Daftar Disini</a></p>
-        </div>
-
-        <div id="registerBox" class="popup">
-            <i class="fa-solid fa-circle-xmark"></i>
-            <h2>Halo Kawan 👊, <span class="active-bg">Selamat Datang!</span></h2>
-            <h3>Daftar Akun</h3>
-            <p>Daftar untuk mendapatkan info seputar olahraga dan kesehatan fisik tiap harinya dari kami</p>
-            <form action="">
-                <div class="input-box">
-                    <label for="usernameEmail">Email/Username</label>
-                    <input type="text" autocomplete="off" name="usernameEmail">
-                </div>
-                <div class="input-box">
-                    <label for="password">Password</label>
-                    <input type="password" autocomplete="off" name="password">
-                </div>
-                <div class="input-box">
-                    <label for="confirmPass">Confirm Password</label>
-                    <input type="password" autocomplete="off" name="confirmPass">
-                </div>
-                <div class="check">
-                    <input type="checkbox" name="remember">
-                    <label for="remember">Beritahu saya jika ada informasi terbaru</label>
-                </div>
-                <button type="submit">Daftar</button>
-            </form>
-            <p>Belum punya akun? <a id="loginLink" >Masuk Disini</a></p>
-        </div>
-    </section>
-
     <!-- Motivation Page -->
     <section id="motivation" class="motivation-page">
-        <h2 class="motivation-header">Kumpulan motivasi yang bisa membuatmu semakin <span class="active-bg">semangat berolahraga</span></h2>
+        <a href="index.html"><i class="fa-solid fa-left-long"></i></a>
+        <h2>Kumpulan motivasi yang bisa membuatmu semakin <span class="active-bg">semangat berolahraga</span></h2>
         <div class="motivation-box">
-                <div class="motivation-text">
-                    <h2>Helsique</h2>
-                    <p>Lihat motivasi dari orang lain yang bisa membuat kamu menjadi lebih semangat !</p>
-                </div>
-                <div class="motivation-list">Klik tombol dibawah untuk melihat motivasi</div>
-                <div class="btn">
-                    <button id="button">Lihat Motivasi</button>
-                </div>
-                <div class="copy">
-                    <i class="fa-solid fa-copy copy-text"></i>
-                    <i class="fa-solid fa-check copied removed"></i>
-                </div>
+            <h2>Helsique</h2>
+            <p class="motivation-list">Klik tombol dibawah untuk melihat motivasi</p>
+            <div class="btn">
+                <button id="button">Temukan</button>
+            </div>
+            <div class="copy">
+                <i class="fa-solid fa-copy copy-text"></i>
+                <i class="fa-solid fa-check copied removed"></i>
+            </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Jquery CDNJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="module" src="script.js"></script>
+    <script>
+    // Motivation Generator
+        $(document).ready(() => {
+        const quotes = [
+            '"Begitu kamu belajar untuk berhenti, itu menjadi kebiasaan."',
+            '"Kelembutan kita yang semakin meningkat, semakin kurangnya kebugaran fisik kita, itu merupakan ancaman bagi keamanan kita."',
+            '"Jangan menyerah pada mimpimu, atau mimpimu akan menyerah padamu."',
+            '"Tiga atau empat repetisi terakhir adalah apa yang membuat otot tumbuh. Area rasa sakit ini membagi seorang juara dari seseorang yang bukan juara."',
+            '"Kebanyakan orang gagal, bukan karena kurangnya keinginan, tetapi, karena kurangnya komitmen."',
+            '"Olahraga adalah persalinan tanpa kelelahan."',
+            '"Beberapa orang ingin itu terjadi, beberapa berharap itu akan terjadi, yang lainnya membuat itu terjadi."',
+            '"Semua kemajuan terjadi di luar zona nyaman."',
+            '"Lihat ke cermin. Itulah rivalmu."',
+            '"Tubuh yang lemah melemahkan pikiran."',
+            '"Jika menurutmu mengangkat beban itu berbahaya, cobalah menjadi lemah. Menjadi lemah itu berbahaya."',
+            '"Tubuh manusia adalah gambaran terbaik dari jiwa manusia."',
+            '"Jam terus berdetak. Apakah kamu menjadi orang yang kamu inginkan?"',
+            '"Fokus. Fokus. Fokus."',
+            '"Olahraga adalah raja. Nutrisi adalah ratu. Satukan mereka dan kamu punya kerajaan."',
+            '"Disiplin adalah jembatan antara tujuan dan pencapaian."',
+            '"Rasa sakit yang kamu rasakan hari ini akan menjadi kekuatan yang kamu rasakan besok."',
+            '"Tindakan adalah kunci dasar untuk semua kesuksesan."',
+            '"Merasa nyaman dengan menjadi tidak nyaman!"',
+            '"Terkadang kamu tidak menyadari kekuatanmu sendiri sampai kamu berhadapan langsung dengan kelemahan terbesarmu."',
+            '"Tidak sepatutnya seseorang merasa aman tentang dua hal: kesehatan dan kekayaan."',
+            '"Kesehatan adalah anugerah terindah yang terkadang lupa untuk kita syukuri."',
+            '"Harta sehati adalah kesehatan, bukan emas dan perak."',
+            '"Energi dan ketekunan mengalahkan segalanya."',
+            '"Lihatlah ke atas untuk Inspirasi dan lihatlah ke bawah untuk Memberi."',
+        ];
+
+        $('.motivation-page .motivation-box .btn #button').click(() => {
+            let randomNumber = Math.floor(Math.random() * (quotes.length));
+            $('.motivation-list').html(quotes[randomNumber]);
+        });
+    });
+
+    </script>
 </body>
 </html>
