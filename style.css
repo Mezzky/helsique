@@ -439,9 +439,15 @@ body.regisPop {
 }
 
 .home-page .motivation a {
-    color: var(--main-color);
-    text-decoration: underline;
-    width: fit-content;
+    margin-top: 20px;
+    color: white;
+    width: 180px;
+    height: 50px;
+    background-color: var(--box-btn-color);
+    text-align: center;
+    line-height: 50px;
+    padding: 0 15px;
+    border-radius: 5px;
 }
 
 .home-page .motivation a i {
@@ -492,6 +498,7 @@ body.regisPop {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 200px;
+    justify-content: space-evenly;
 }
 
 .why-page .content {
@@ -699,16 +706,17 @@ a {
 .consist-page .consist-card .card-container .card p {
     color: var(--text-dimmed);
     font-weight: 500;
-    height: 100px;
+    height: 100px;  
 }
 
 .consist-page .consist-card .card-container .card a {
-    width: fit-content;
+    width: 100%;
     background-color: var(--main-color);
     color: #fff;
-    padding: 5px 20px;
+    padding: 15px 20px;
     font-weight: 500;
     border-radius: 5px;
+    text-align: center;
 }
 
 .consist-page .consist-card .card-container .card a i {
@@ -846,7 +854,7 @@ p {
 
 .faq-page .content .list-quest .quest span {
     margin-top: 20px;
-    color: var(--text-dimmed);
+    color: white;
     font-weight: 300;
     font-size: 16px;
     transition: 300ms ease;
@@ -1090,6 +1098,20 @@ footer .chat .chat-box .message button:hover {
 
 /*================== RESPONSIVE ==================*/
 /* ***** TABLET ***** */
+@media screen and (max-width: 1024px) {
+    /* Why Page */
+    .why-page .tittle-box, .why-page .content {
+        gap: 100px;
+    }
+
+    /* Motivation */
+    .home-page .motivation a {
+        width: 150px;
+    }
+    
+}
+
+/* ***** TABLET ***** */
 @media screen and (max-width: 820px) {
 
     /* MENU TOGGLE */
@@ -1270,7 +1292,7 @@ footer .chat .chat-box .message button:hover {
 
 /* ***** MOBILE ***** */
 @media screen and (max-width: 480px) {
-
+    
     /* HOME PAGE */
     .home-page {
         padding: 120px 50px;
@@ -1294,7 +1316,7 @@ footer .chat .chat-box .message button:hover {
     }
 
     .home-page .status {
-        gap: 10px;
+        gap: 0px;
     }
 
     .home-page .motivation .motivation-content p {
@@ -1378,6 +1400,11 @@ footer .chat .chat-box .message button:hover {
     footer .box {
         gap: 10px;
     }
+
+    /* Padding */
+    .home-page, .why-page, .start-page, .consist-page, .faq-page, footer {
+        padding: 150px 20px;
+    }
 }
 
 /* ***** MOBILE L ***** */
@@ -1433,6 +1460,10 @@ footer .chat .chat-box .message button:hover {
 
     .faq-page .content .img-box img {
         width: 370px;
+    }
+    /* Padding */
+    .home-page, .why-page, .start-page, .consist-page, .faq-page, footer {
+        padding: 150px 20px;
     }
 }
 
