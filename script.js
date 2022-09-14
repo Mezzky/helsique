@@ -68,14 +68,12 @@ close.forEach(el => {
 // Copy Button & Motivasi Button
 motivationBtn.addEventListener('click', () => {
     copy.classList.remove('removed');
-    copied.classList.add('removed');
-    
+    copied.classList.add('removed'); 
 });
 
 copy.addEventListener('click', () => {
     copy.classList.add('removed');
     copied.classList.remove('removed');
-    
 });
 
 $(document).ready(() => {
