@@ -1419,7 +1419,8 @@ footer .chat .chat-box .message button:hover {
     /* Padding */
     .home-page, .why-page, .start-page, .consist-page, .faq-page, footer {
         padding: 150px 20px;
-        
+    }
+
     /* MOTIVATION PAGE */
     .motivation-page{
         padding: 30px 20px;
@@ -1484,6 +1485,7 @@ footer .chat .chat-box .message button:hover {
     /* Padding */
     .home-page, .why-page, .start-page, .consist-page, .faq-page, footer {
         padding: 150px 20px;
+    }
 
     /* MOTIVATION PAGE */
     .motivation-page a{
