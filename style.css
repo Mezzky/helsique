@@ -485,6 +485,8 @@ body.regisPop {
 
 /* WHY PAGE */
 .why-page {
+    overflow: hidden;
+    position: relative;
     width: 100%;
     background-color: var(--main-color);
     margin: auto;
@@ -495,6 +497,8 @@ body.regisPop {
 }
 
 .why-page .tittle-box {
+    position: relative;
+    z-index: 10;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 200px;
@@ -502,6 +506,8 @@ body.regisPop {
 }
 
 .why-page .content {
+    position: relative;
+    z-index: 10;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
@@ -623,7 +629,7 @@ body.regisPop {
     overflow: hidden;
 }
 
-.consist-page .shape {
+.consist-page .shape, .why-page .shape {
     position: absolute;
     top: 500px;
     left: 0;
@@ -632,7 +638,7 @@ body.regisPop {
     width: 600px;
     height: 600px;
     filter: blur(50px);
-    animation: scale 10s linear infinite reverse;
+    animation: scale 5s linear infinite reverse;
 }
 
 .consist-page .shape.one {
@@ -646,6 +652,19 @@ body.regisPop {
     top: 1200px;
     left: 1000px;
 }
+
+/* Shape Start */
+.why-page .shape.one{
+    background-color: rgba(116, 118, 250, 30%);
+    top: -300px;
+    left: -200px;
+}
+.why-page .shape.two{
+    background-color: rgba(226, 87, 87, 30%);
+    bottom: 0;
+    left: 1000px;
+}
+/* ----------- */
 
 .consist-page .shape.three {
     background-color: rgba(138, 128, 250, 30%);
@@ -680,7 +699,7 @@ body.regisPop {
     display: flex;
     gap: 15px;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 20px;
     border: 1px solid var(--text-dimmed);
     overflow: hidden;
@@ -924,7 +943,8 @@ footer .box ul li a:hover::after {
 }
 
 footer .chat {
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
     bottom: 30px;
     left: 30px;
 }
