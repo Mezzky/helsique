@@ -943,6 +943,7 @@ footer .box ul li a:hover::after {
 }
 
 footer .chat {
+    visibility: hidden;
     position: fixed;
     z-index: 1000;
     bottom: 30px;
@@ -950,6 +951,7 @@ footer .chat {
 }
 
 footer .chat>i {
+    visibility: visible;
     position: fixed;
     z-index: 1000;
     bottom: 10px;
@@ -1139,7 +1141,6 @@ footer .chat .chat-box .message button:hover {
     .home-page .motivation a {
         width: 150px;
     }
-    
 }
 
 /* ***** TABLET ***** */
@@ -1317,7 +1318,7 @@ footer .chat .chat-box .message button:hover {
     }
 
     .motivation-page .motivation-box .motivation-text p {
-    font-size: 18px;
+        font-size: 18px;
     }
 
     .motivation-page .motivation-box .motivation-list {
@@ -1327,7 +1328,6 @@ footer .chat .chat-box .message button:hover {
 
 /* ***** MOBILE ***** */
 @media screen and (max-width: 480px) {
-    
     /* HOME PAGE */
     .home-page {
         padding: 120px 50px;
@@ -1436,11 +1436,6 @@ footer .chat .chat-box .message button:hover {
         gap: 10px;
     }
 
-    /* Padding */
-    .home-page, .why-page, .start-page, .consist-page, .faq-page, footer {
-        padding: 150px 20px;
-    }
-
     /* MOTIVATION PAGE */
     .motivation-page{
         padding: 30px 20px;
@@ -1459,10 +1454,18 @@ footer .chat .chat-box .message button:hover {
         font-size: 28px;
     }
 
+    header .navbar{
+        right: 10px;
+    }
+
     /* HOME PAGE */
     .home-page .home-img img {
         width: 310px;
         height: 265px;
+    }
+
+    .home-page .motivation{
+        grid-template-columns: 1fr;
     }
 
     /* WHY PAGE */
@@ -1699,12 +1702,16 @@ footer .chat .chat-box .message button:hover {
 
     /* CONSISTENT PAGE */
     .consist-page .consist-card h2 {
-        width: 280px;
         font-size: 22px;
     }
 
     .consist-page .consist-card .card-container {
         grid-template-columns: repeat(1, 250px);
+    }
+
+    .consist-page .consist-card .card-container .card p{
+        font-size: 15px;
+        margin-bottom: 40px;
     }
 
     /* FAQ */
