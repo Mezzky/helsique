@@ -789,12 +789,15 @@ body.loginPop, body.regisPop{
 }
 
 .faq-page .content .img-box{
+    z-index: 10;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
 
 .faq-page .content img{
+    z-index: 5;
     width: 430px;
 }
 
@@ -805,6 +808,7 @@ body.loginPop, body.regisPop{
 }
 
 .faq-page .content .list-quest .quest{
+    cursor: pointer;
     border: 2px solid var(--main-color);
     padding: 20px;
     display: flex;
@@ -815,19 +819,23 @@ body.loginPop, body.regisPop{
     height: auto;
 }
 
-.faq-page .content .list-quest .quest h4{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.faq-page .content .list-quest .quest p{
+.faq-page .content .list-quest .quest span{
+    margin-top: 20px;
     color: var(--text-dimmed);
-    display: none;
+    font-weight: 300;
+    font-size: 16px;
+    transition: 300ms ease;
 }
 
-.faq-page .content .list-quest .quest h4{
-    color: var(--main-color);
+.faq-page .content .list-quest details{
+    font-weight: 600;
+}
+
+.faq-page .content .list-quest details[open]{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 18px;
+    transition: 300ms ease;
 }
 
 footer{
