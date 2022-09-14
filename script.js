@@ -61,12 +61,12 @@ $(document).ready(() => {
     }
 
     $('.motivation-page .motivation-box .btn').click(() => {
-        copyToClipboard($('.motivation-list'));
         $('.motivation-page .motivation-box .copy-text').removeClass('removed');
         $('.motivation-page .motivation-box .copied').addClass('removed');
     });
-
-    $('.motivation-page .motivation-box .copy-text').click(() => {
+    
+    $('.motivation-page .motivation-box .copy').click(() => {
+        copyToClipboard($('.motivation-list'));
         $('.motivation-page .motivation-box .copy-text').addClass('removed');
         $('.motivation-page .motivation-box .copied').removeClass('removed');
     });
