@@ -65,7 +65,7 @@ $(document).ready(() => {
         $('.motivation-page .motivation-box .copy-text').removeClass('removed');
         $('.motivation-page .motivation-box .copied').addClass('removed');
     });
-    
+
     $('.motivation-page .motivation-box .copy').click(() => {
         copyToClipboard($('.motivation-list'));
         $('.motivation-page .motivation-box .copy-text').addClass('removed');
@@ -96,10 +96,31 @@ $(document).ready(() => {
         '"Terkadang kamu tidak menyadari kekuatanmu sendiri sampai kamu berhadapan langsung dengan kelemahan terbesarmu."',
     ];
 
+    let currentIndex = 0;
+    let shuffledQuotes = shuffleArray(quotes.slice());
+
     $('#button').click(() => {
-        let randomNumber = Math.floor(Math.random() * (quotes.length));
-        $('.motivation-list').html(quotes[randomNumber]);
+        if (currentIndex >= quotes.length) {
+            let randomNumber = Math.floor(Math.random() * (shuffledQuotes.length));
+            $('.motivation-list').html(shuffledQuotes[randomNumber]);
+        } else {
+            $('.motivation-list').html(quotes[currentIndex]);
+            currentIndex++;
+        }
     });
+
+    function shuffleArray(array) {
+        let currentIndex = array.length;
+        let temporaryValue, randomIndex;
+        while (0 !== currentIndex) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+        return array;
+    }
 
     // Pop-Up Chat Box
     $('.chat i, .chat .chat-box i').click(() => {

@@ -10,7 +10,7 @@
     --accent-color: #E25757;
     --box-btn-color: #2A292B;
     --tittle-text: #2A292B;
-    --text-dimmed: #616161;
+    --text-dimmed: #919191;
 }
 
 
@@ -973,6 +973,7 @@ footer .chat>i:hover {
 footer .chat .chat-box {
     display: none;
     visibility: hidden;
+    transform:  translateX(-30px) translateY(80px);
     position: relative;
     margin-bottom: 50px;
     z-index: 100;
@@ -986,6 +987,8 @@ footer .chat .chat-box {
 }
 
 footer .chat .chat-box.show {
+    transition: 300ms all;
+    transform:  translateX(0px) translateY(0px);
     display: flex;
     visibility: visible;
 }
@@ -1331,7 +1334,7 @@ footer .chat .chat-box .message button:hover {
     /* HOME PAGE */
     .home-page {
         padding: 120px 50px;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .home-page .content h2 {
@@ -1459,9 +1462,11 @@ footer .chat .chat-box .message button:hover {
     }
 
     /* HOME PAGE */
+    .home-page{
+        align-items: center;
+    }
     .home-page .home-img img {
         width: 310px;
-        height: 265px;
     }
 
     .home-page .motivation{
