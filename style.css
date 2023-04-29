@@ -976,7 +976,7 @@ footer .chat .chat-box {
     margin-bottom: 50px;
     z-index: 100;
     background-color: var(--box-btn-color);
-    width: 300px;
+    /* max-width: 300px; */
     padding: 20px;
     border-radius: 10px;
     display: flex;
