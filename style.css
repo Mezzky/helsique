@@ -20,6 +20,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--main-font);
+    /* border: 2px solid red; */
 }
 
 html {
@@ -459,6 +460,7 @@ body.regisPop {
 }
 
 .home-page .status {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -522,10 +524,6 @@ body.regisPop {
     gap: 30px;
     justify-content: center;
     align-items: center;
-}
-
-.why-page .tittle-box .tittle {
-    width: 400px;
 }
 
 .why-page .tittle-box .tittle h2 {
@@ -1210,10 +1208,6 @@ footer .chat .chat-box .message button:hover {
         align-items: center;
     }
 
-    .home-page .content p {
-        width: 400px;
-    }
-
     .home-page .content .scroll {
         display: flex;
     }
@@ -1334,7 +1328,7 @@ footer .chat .chat-box .message button:hover {
     /* HOME PAGE */
     .home-page {
         padding: 120px 50px;
-        /* justify-content: center; */
+        justify-content: center;
     }
 
     .home-page .content h2 {
@@ -1369,10 +1363,6 @@ footer .chat .chat-box .message button:hover {
     .why-page .tittle-box {
         justify-content: space-between;
         gap: 5px;
-    }
-
-    .why-page .tittle-box .tittle {
-        width: 380px;
     }
 
     .why-page .content .left-box,
@@ -1462,9 +1452,6 @@ footer .chat .chat-box .message button:hover {
     }
 
     /* HOME PAGE */
-    .home-page{
-        align-items: center;
-    }
     .home-page .home-img img {
         width: 310px;
     }
@@ -1544,7 +1531,6 @@ footer .chat .chat-box .message button:hover {
     }
 
     .home-page .content p {
-        width: 300px;
         font-size: 16px;
     }
 
@@ -1570,9 +1556,6 @@ footer .chat .chat-box .message button:hover {
         gap: 10px;
     }
 
-    .why-page .tittle-box .tittle {
-        width: 300px;
-    }
 
     .why-page .tittle-box .tittle h2 {
         font-size: 26px;
@@ -1643,7 +1626,6 @@ footer .chat .chat-box .message button:hover {
     }
 
     .home-page .content p {
-        width: 280px;
         font-size: 14px;
     }
 
@@ -1676,10 +1658,6 @@ footer .chat .chat-box .message button:hover {
     /* WHY PAGE */
     .why-page .tittle-box {
         gap: 10px;
-    }
-
-    .why-page .tittle-box .tittle {
-        width: 250px;
     }
 
     .why-page .tittle-box .tittle h2 {
@@ -1743,6 +1721,10 @@ footer .chat .chat-box .message button:hover {
     /* FOOTER */
     footer {
         padding: 100px 10px;
+    }
+
+    footer .chat .chat-box{
+        left: -20px;
     }
 }
 
