@@ -1507,6 +1507,11 @@ footer .chat .chat-box .message button:hover {
     .motivation-page a{
         padding: 10px;
     }
+
+    /* FOOTER */
+    footer .chat .chat-box{
+        left: -20px;
+    }
 }
 
 /* ***** MOBILE M ***** */
@@ -1601,12 +1606,6 @@ footer .chat .chat-box .message button:hover {
 
     .faq-page .content .list-quest .quest h3 {
         font-size: 18px;
-    }
-
-    /* FOOTER */
-    
-    footer .chat .chat-box{
-        left: -20px;
     }
 }
 
