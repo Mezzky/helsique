@@ -976,7 +976,8 @@ footer .chat .chat-box {
     margin-bottom: 50px;
     z-index: 100;
     background-color: var(--box-btn-color);
-    min-width: 300px;
+    width: 100%;
+    /* margin-right: 20px; */
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -1601,6 +1602,12 @@ footer .chat .chat-box .message button:hover {
     .faq-page .content .list-quest .quest h3 {
         font-size: 18px;
     }
+
+    /* FOOTER */
+    
+    footer .chat .chat-box{
+        left: -20px;
+    }
 }
 
 /* ***** MOBILE S ***** */
@@ -1721,10 +1728,6 @@ footer .chat .chat-box .message button:hover {
     /* FOOTER */
     footer {
         padding: 100px 10px;
-    }
-
-    footer .chat .chat-box{
-        left: -20px;
     }
 }
 
