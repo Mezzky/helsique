@@ -97,7 +97,7 @@ $(document).ready(() => {
     ];
 
     let currentIndex = 0;
-    let shuffledQuotes = shuffleArray(quotes.slice());
+    let shuffledQuotes = shuffleArray(quotes);
 
     $('#button').click(() => {
         if (currentIndex >= quotes.length) {
@@ -112,12 +112,10 @@ $(document).ready(() => {
     function shuffleArray(array) {
         let currentIndex = array.length;
         let temporaryValue, randomIndex;
-        while (0 !== currentIndex) {
+        while (currentIndex !== 0) {
             randomIndex = Math.floor(Math.random() * currentIndex);
             currentIndex -= 1;
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
+            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
         }
         return array;
     }
