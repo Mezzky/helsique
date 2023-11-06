@@ -1,4 +1,4 @@
-$ ( d o cument).ready(() => {
+$ ( d o c ument).ready(() => {
     $(window).scroll(() => {
         if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
             $('header').addClass('scrolled');
